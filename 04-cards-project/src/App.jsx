@@ -106,8 +106,16 @@ const jobs = [
 
   return (
     <div className='parent'>
-    {jobs.map((job,index)=>(
-      <Card key = {index} {...job}/>
+    {jobs.map((job)=>(
+      <Card  img={job.img} 
+      brandName = {job.brandName} 
+      dayAgo = {job.dayAgo} 
+      designation = {job.designation} 
+      employmentType={job.employmentType}
+      employmentLevel = {job.employmentLevel} 
+      payment = {job.payment} 
+      location = {job.location}
+      />
     ))}
     </div>
   )
