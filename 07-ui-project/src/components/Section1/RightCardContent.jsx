@@ -1,9 +1,9 @@
 import React from 'react'
 
-const RightCardContent = () => {
+const RightCardContent = (props) => {
   return (
     <div className='absolute top-0 left-0 h-full w-full p-8 flex flex-col justify-start'>
-            <h1 className='bg-white text-xl font-bold rounded-full flex justify-center items-center h-12 w-12 '>1</h1>
+            <h1 className='bg-white text-xl font-bold rounded-full flex justify-center items-center h-12 w-12 '>{props.id}</h1>
             <div className='flex-1 flex flex-col justify-end'>
                 <p className='text-xl leading-relaxed text-white mb-14'> Reprehenderit laboris ea officia cupidatat laborum exercitation  </p>
                 <div className='flex justify-between'>
